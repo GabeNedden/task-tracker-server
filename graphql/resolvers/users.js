@@ -117,7 +117,9 @@ module.exports = {
                 username,
                 password,
                 createdAt: new Date().toISOString(),
-                role: "Default"
+                role: "Default",
+                value: username,
+                label: username
             });
 
             const res = await newUser.save();

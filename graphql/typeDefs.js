@@ -28,7 +28,9 @@ module.exports = gql`
         id: ID,
         role: String,
         username: String,
-        createdAt: String
+        createdAt: String,
+        value: String,
+        label: String
     }
     type Comment {
         id: ID,
@@ -47,6 +49,8 @@ module.exports = gql`
         token: String
         username: String
         createdAt: String
+        value: String
+        label: String
     }
     input RegisterInput {
         username: String!
